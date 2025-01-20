@@ -13,4 +13,6 @@ function print_color_map() {
 
 result = print_color_map();
 expect(result).equals(25);
+expect(`0 | White | Blue`).to.equal(" 0  | White     | Blue"); // Misaligned output (fails)
+expect(`24 | Violet | Slate`).to.equal("24  | Violet    | Slate"); // Misaligned output (fails)
 console.log('All is well (maybe!)');
